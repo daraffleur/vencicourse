@@ -5,6 +5,7 @@ from flask_basicauth import BasicAuth
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
+from flask_migrate import Migrate
 from flask_login import LoginManager
 from werkzeug.exceptions import HTTPException
 
@@ -15,6 +16,7 @@ from app.logger import log
 login_manager = LoginManager()
 db = SQLAlchemy()
 mail = Mail()
+migrate: Migrate = Migrate()
 bootstrap = Bootstrap()
 log.set_level(log.DEBUG)
 basic_auth = BasicAuth()
@@ -23,9 +25,7 @@ basic_auth = BasicAuth()
 def create_app(environment="development"):
 
     from config import config
-    from app.models import (
-        Applicant
-    )
+    from app.models import Applicant
     from app.views import (
         main_blueprint,
     )
@@ -40,6 +40,8 @@ def create_app(environment="development"):
 
     # Set up email.
     mail.init_app(app)
+
+    migrate.init_app(app, db)
 
     # Set up extensions.
     db.init_app(app)

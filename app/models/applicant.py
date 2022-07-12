@@ -10,7 +10,6 @@ class Applicant(db.Model, ModelMixin):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(100))
     last_name = db.Column(db.String(100))
-    middle_name = db.Column(db.String(100))
     email = db.Column(db.String(255))
     phone = db.Column(db.String(20))
     registration_date = db.Column(db.DateTime, default=datetime.now)

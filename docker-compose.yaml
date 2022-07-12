@@ -9,7 +9,7 @@ services:
       - db_data:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
-      POSTGRES_DB: tokarlanding
+      POSTGRES_DB: vencilanding
     ports:
       - 54328:5432
 
