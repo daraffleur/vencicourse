@@ -42,7 +42,7 @@ def index():
             "Your application has been sent successfully! We will call you soon!",
         )
         # return redirect("https://tokarstudy.com.ua/#registration")
-        return redirect("http://localhost:5000/#registration")
+        return redirect("http://46.101.167.8/#registration")
     elif form.is_submitted():
         for error in form.errors:
             for msg in form.errors[error]:
@@ -52,5 +52,5 @@ def index():
                     "danger",
                 )
                 # return redirect("https://tokarstudy.com.ua/#registration")
-                return redirect("http://localhost:5000/#registration")
+                return redirect("http://46.101.167.8/#registration")
     return render_template("index.html", form=form)

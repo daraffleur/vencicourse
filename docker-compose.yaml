@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.3"
 
 services:
   db:
@@ -17,8 +17,9 @@ services:
     build: .
     restart: always
     container_name: app
+    # command: bash ./start_prod_server.sh
     ports:
-      - 127.0.0.1:5060:5000
+      - 127.0.0.1:5000:5000
     depends_on:
       - db
     volumes:
