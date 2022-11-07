@@ -13,6 +13,11 @@
     margin-top: 5px;
   }
 
+  #main-slide .carousel-item .carousel-caption .headline-title {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
   #main-slide .carousel-item .carousel-caption p {
     font-size: 13px;
   }
@@ -50,6 +55,11 @@
 
   #main-slide .carousel-item .carousel-caption .heading {
     font-size: 20px;
+  }
+
+  #main-slide .carousel-item .carousel-caption .headline-title {
+    font-size: 18px;
+    margin-top: 10px;
   }
 
   #main-slide .carousel-item .carousel-caption p {
@@ -129,6 +139,11 @@
 
   #main-slide .carousel-item .carousel-caption .heading {
     font-size: 20px;
+  }
+
+  #main-slide .carousel-item .carousel-caption .headline-title {
+    font-size: 18px;
+    margin-top: 5px;
   }
 
   #main-slide .carousel-item .carousel-caption p {
@@ -211,6 +226,11 @@
 
   #main-slide .carousel-item .carousel-caption .heading {
     font-size: 14px;
+    margin-top: 5px;
+  }
+
+  #main-slide .carousel-item .carousel-caption .headline-title {
+    font-size: 12px;
     margin-top: 5px;
   }
 
@@ -328,6 +348,16 @@
 @media (min-width: 320px) and (max-width: 480px) {
   #main-slide .carousel-item .carousel-caption .heading {
     letter-spacing: 0;
+  }
+
+  #main-slide .carousel-item .carousel-caption .headline-title {
+    font-size: 10px;
+    letter-spacing: 0;
+    color: #E91E63;
+    background-color: white;
+    margin: 2px;
+    padding: 10px;
+    margin-top: 10px;
   }
 
   #main-slide .carousel-item .carousel-caption p {
