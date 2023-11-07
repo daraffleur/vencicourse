@@ -42,7 +42,7 @@ def index():
             log.DEBUG,
             "Your application has been sent successfully! We will call you soon!",
         )
-        return redirect("http://www.vencistankovcourse.info/#registration")
+        return redirect("http://www.coursebyvencistankov.info/#registration")
     elif form.is_submitted():
         for error in form.errors:
             for msg in form.errors[error]:
@@ -51,5 +51,5 @@ def index():
                     "Something went wrong... Please reload the page and try submitting an application again. ",
                     "danger",
                 )
-                return redirect("http://www.vencistankovcourse.info/#registration")
+                return redirect("http://www.coursebyvencistankov.info/#registration")
     return render_template("index.html", form=form)
